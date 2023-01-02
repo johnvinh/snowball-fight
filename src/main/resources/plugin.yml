@@ -1,0 +1,4 @@
+name: SnowballFight
+version: '${version}'
+main: dev.johnvinh.snowballfight.SnowballFight
+api-version: 1.19
