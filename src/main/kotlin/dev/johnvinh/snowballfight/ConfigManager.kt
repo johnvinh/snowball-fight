@@ -6,6 +6,11 @@ import org.bukkit.configuration.file.FileConfiguration
 class ConfigManager(private val snowballFight: SnowballFight) {
     private val config: FileConfiguration = snowballFight.config
 
+    init {
+        config.options().copyDefaults(true)
+        snowballFight.saveDefaultConfig()
+    }
+
     fun getArenaCorner1(): Location {
         return Location(
             config.getString("arena.world")?.let { snowballFight.server.getWorld(it) },
