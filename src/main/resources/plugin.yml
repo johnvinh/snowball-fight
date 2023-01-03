@@ -2,3 +2,11 @@ name: SnowballFight
 version: '${version}'
 main: dev.johnvinh.snowballfight.SnowballFight
 api-version: 1.19
+arena-corner-1:
+  x: 74
+  y: 1
+  z: 60
+arena-corner-2:
+  x: 22
+  y: 1
+  z: 10
