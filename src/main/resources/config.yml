@@ -1,0 +1,10 @@
+arena:
+  world: 'snowballfight'
+  corner-1:
+    x: 22.0
+    y: 1.0
+    z: 10.0
+  corner-2:
+    x: 74.0
+    y: 28.0
+    z: 60.0
