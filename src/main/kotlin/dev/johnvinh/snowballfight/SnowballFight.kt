@@ -1,5 +1,6 @@
 package dev.johnvinh.snowballfight
 
+import dev.johnvinh.snowballfight.listeners.ArenaListener
 import org.bukkit.plugin.java.JavaPlugin
 
 class SnowballFight : JavaPlugin() {
@@ -7,6 +8,7 @@ class SnowballFight : JavaPlugin() {
 
     override fun onEnable() {
         // Plugin startup logic
+        server.pluginManager.registerEvents(ArenaListener(this), this)
     }
 
     override fun onDisable() {
