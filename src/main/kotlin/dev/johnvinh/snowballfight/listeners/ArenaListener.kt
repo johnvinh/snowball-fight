@@ -13,7 +13,7 @@ class ArenaListener(private val plugin: SnowballFight) : Listener {
 
     @EventHandler
     fun onBlockBreak(e: BlockBreakEvent) {
-        if (cuboid.isIn(e.block.location)) {
+        if (!(cuboid.isIn(e.block.location))) {
             e.isCancelled = true
         }
     }
