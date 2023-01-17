@@ -1,4 +1,7 @@
 package dev.johnvinh.snowballfight.arena
 
-class Arena {
+import java.util.UUID
+
+class Arena(val id: Int) {
+    val players: MutableList<UUID> = mutableListOf()
 }
